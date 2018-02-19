@@ -87,7 +87,7 @@ function checkAnswer() {
         // если совпадает - запускаем обработку
     } else if (histor.length < 1 || answerFirstLetter ===  lastLetter) {
         histor.push(ans);
-
+        document.querySelector('input[id="answer"]').value = '';
         answer = ans;
         placeAndRender(answer);
         postApp();
