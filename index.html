@@ -17,8 +17,10 @@
 		<div class="interact">
 			<h3>Игра в города</h3>
 			<div class="info">Введите город:</div>
-			<input id="answer" title="Должны использоваться только русские буквы, минимум 2 символа" pattern="(?=.*[а-яА-Я]).{2,}">
-			<button id="send" onclick="checkAnswer()">Ответить</button>
+			<form onsubmit="return false;">
+				<input id="answer" title="Должны использоваться только русские буквы, минимум 2 символа" pattern="(?=.*[а-яА-Я]).{2,}" autofocus>
+				<button id="send" type="submit" onclick="checkAnswer()">Ответить</button>
+			</form>
 		</div>
 		<div class="comp-answer">
 			<div class="info">Ответ компьютера:</div>
